@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Text Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Text Translator</h1>
+        <p>Upload an image containing text to translate it to English</p>
+        
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="fileInput" accept="image/*">
+            <label for="fileInput">Choose an image</label>
+            <p>or drag and drop file here</p>
+        </div>
+        
+        <div class="results" id="results">
+            <div class="result-box">
+                <h3>Original Text</h3>
+                <div id="originalText"></div>
+            </div>
+            <div class="result-box">
+                <h3>Translated Text</h3>
+                <div id="translatedText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
